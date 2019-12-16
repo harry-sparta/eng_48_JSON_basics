@@ -27,5 +27,9 @@ Make a small program that requests 3 postcodes and returns something like:
 > 3 - (...)
 ````
 
+Then you should also create some code to get out the Lat and Long.
+
+This should now start to be put into functions.
+
 JSON dumps and dump
 To convert dictionary into strings that could be sent off faster.

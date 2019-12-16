@@ -15,7 +15,7 @@ dictionary_postcodes = {
 }
 
 json_body = json.dumps(dictionary_postcodes)
-print(json_body)
+# print(json_body)
 
 # The url
 base_url = 'http://api.postcodes.io/'
@@ -26,9 +26,10 @@ headers = {'Content-type' : 'application/json'}
 
 # Making the requests
 postcodes_post_response = requests.post(base_url+path, data=json_body, headers=headers)
-print(postcodes_post_response.json())
+# print(postcodes_post_response.json())
 
 results = postcodes_post_response.json()['result']
 
-# for request in results:
-#     print(request)
+for request in results:
+    print(request)
+
